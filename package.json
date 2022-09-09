@@ -1,5 +1,5 @@
 {
-  "name": "electron-app",
+  "name": "electron-model",
   "version": "0.1.0",
   "private": true,
   "main": "src/background.js",

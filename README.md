@@ -1,4 +1,4 @@
-# electron-app
+# electron-model
 
 ## Project setup
 ```
