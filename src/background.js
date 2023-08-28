@@ -16,6 +16,12 @@ let winURL =
     ? `http://localhost:8080`
     : `app://./index.html`
 
+if (process.env.NODE_ENV !== 'development') {
+  global.__static = require('path')
+    .join(__dirname, '/static')
+    .replace(/\\/g, '\\\\')
+}
+
 const createWindow = () => {
   // 创建浏览器窗口。
   mainWindow = new BrowserWindow({
